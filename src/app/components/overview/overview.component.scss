@@ -1,0 +1,33 @@
+.overview {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  width: 4rem;
+  height: 4rem;
+  text-align: center;
+  font-weight: 600;
+  margin: 1rem;
+  background-color: var(--color-gray-light);
+
+  &.error, &.warning {
+    color: var(--color-white);
+
+    .overview__state {
+      color: var(--color-white);
+    }
+  }
+
+  &.error {
+    background-color: var(--color-error);
+  }
+
+  &.warning {
+    background-color: var(--color-warning);
+  }
+
+  &__state {
+    align-self: flex-end;
+    font-size: 1rem;
+    color: var(--color-success);
+  }
+}
