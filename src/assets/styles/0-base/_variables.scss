@@ -1,0 +1,26 @@
+:root {
+  // C O L O R S
+  --color-black: #000000;
+  --color-gray-dark: #292a32;
+  --color-gray-base: #67697C;
+  --color-gray-light: #c1c2cc;
+  --color-white: #ffffff;
+
+  --color-main: #00a89c;
+  --color-success: #669d31;
+  --color-warning: #F7C548;
+  --color-error: #C20114;
+
+  // T Y P O G R A P H Y
+  --font-primary: 'Roboto', sans-serif;
+  --text-base-size: 1em;
+  --text-scale-ratio: 1.2;
+
+  --text-xs: calc(1em / (var(--text-scale-ratio) * var(--text-scale-ratio)));
+  --text-sm: calc(1em / var(--text-scale-ratio));
+  --text-md: calc(1em * var(--text-scale-ratio));
+  --text-lg: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+  --text-xxxl: calc(1em * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio) * var(--text-scale-ratio));
+}
