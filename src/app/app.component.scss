@@ -1,3 +1,22 @@
-.logo {
-  width: 20%;
+.header {
+  padding: 1rem;
+  background-color: var(--color-gray-light);
+  border-bottom: .5rem solid var(--color-main);
+  .logo {
+    max-width: 12rem;
+  }
+}
+.navigation, .overview {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.navigation {
+  background-color: var(--color-gray-light);
+}
+
+.overview {
+  padding: 10rem;
+  justify-content: center;
+  align-items: center;
 }

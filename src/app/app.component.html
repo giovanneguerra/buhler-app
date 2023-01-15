@@ -1,8 +1,7 @@
-<header>
-  Buhler
+<header class="header">
   <img class="logo" src="../assets/images/buhler-logo.png" alt="Buhler logo" />
 </header>
-<ng-container *ngIf="machines$ | async as machines">
-  <app-navigation [machines]="machines"></app-navigation>
-  <app-overview [machines]="machines"></app-overview>
-</ng-container>
+<div class="content" *ngIf="machines$ | async as machines">
+  <app-navigation class="navigation" [machines]="machines"></app-navigation>
+  <app-overview class="overview" [machines]="machines"></app-overview>
+</div>
