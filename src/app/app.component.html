@@ -1,7 +1,10 @@
-<header class="header">
-  <img class="logo" src="../assets/images/buhler-logo.png" alt="Buhler logo" />
-</header>
-<div class="content" *ngIf="machines$ | async as machines">
-  <app-navigation class="navigation" [machines]="machines"></app-navigation>
-  <app-overview class="overview" [machines]="machines"></app-overview>
-</div>
+<ng-container *ngIf="machines$ | async as machines">
+  <header class="header">
+    <img class="logo" src="../assets/images/buhler-logo.png" alt="Buhler logo" />
+    <a class="link" title="Machine data" [href]="generateJSONDownload(machines)" download="machines.json" >Download JSON</a>
+  </header>
+  <div class="content">
+    <app-navigation class="navigation" [machines]="machines"></app-navigation>
+    <app-overview class="overview" [machines]="machines"></app-overview>
+  </div>
+</ng-container>
