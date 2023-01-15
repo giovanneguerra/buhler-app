@@ -1,3 +1,6 @@
-<div>
-{{ machines | json}}
-</div>
+<ng-container *ngFor="let machine of machines">
+  <div class="navigation" ngClass="{{machine.state | machineState}}">
+    <span class="navigation__state material-icons">{{ machine.state | machineState }}</span>
+    <p class="navigation__title">{{ machine.title }}</p>
+  </div>
+</ng-container>
