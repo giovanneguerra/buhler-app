@@ -1,0 +1,9 @@
+<ng-container *ngFor="let machine of machines">
+  <div class="machine">
+    <span class="machine__state material-icons">{{ machine.state | machineState }}</span>
+    <div class="machine__icon">
+      <span class="material-icons">{{ machine.icon }}</span>
+    </div>
+    <p class="machine__title">{{ machine.title }}</p>
+  </div>
+</ng-container>
