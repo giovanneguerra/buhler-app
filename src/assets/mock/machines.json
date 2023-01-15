@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "state": 0,
+    "title": "Scale",
+    "icon": "system_update_alt"
+  },
+  {
+    "id": 2,
+    "state": 1,
+    "title": "Attacher",
+    "icon": "chrome_reader_mode"
+  },
+  {
+    "id": 3,
+    "state": 0,
+    "title": "Packer",
+    "icon": "video_label"
+  },
+  {
+    "id": 4,
+    "state": 2,
+    "title": "Closer",
+    "icon": "grid_on"
+  }
+]
